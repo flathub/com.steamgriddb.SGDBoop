@@ -7,20 +7,31 @@ finish-args:
   - --socket=wayland
   - --socket=fallback-x11
   - --share=network
-  - --filesystem=~/.steam/steam/config/loginusers.vdf:ro # Used for reading SteamID
-  - --filesystem=~/.steam/steam/userdata:rw # For saving custom images except icons, and reading shortcuts.vdf for Non-Steam games
-  - --filesystem=~/.steam/steam/appcache/librarycache:rw # For saving icons
+  # Used for reading SteamID of user
+  - --filesystem=~/.steam/steam/config/loginusers.vdf:ro
+  # For saving custom images and reading shortcuts.vdf for Non-Steam games. shortcuts.vdf is also written to for non-Steam icons.
+  - --filesystem=~/.steam/steam/userdata:rw
+  # For saving icons for Steam games
+  - --filesystem=~/.steam/steam/appcache/librarycache:rw
+  # Read paths to Source/GoldSrc mods
+  - --filesystem=~/.steam/registry.vdf:ro
+  # Default path to sourcemods folder
+  - --filesystem=~/.steam/steam/steamapps/sourcemods:ro
+  # Default path to half-life folder
+  - --filesystem=~/.steam/steam/steamapps/common/Half-Life:ro
   # Same thing as above but for Flatpak Steam
   - --filesystem=~/.var/app/com.valvesoftware.Steam/data/Steam/config/loginusers.vdf:ro
   - --filesystem=~/.var/app/com.valvesoftware.Steam/data/Steam/userdata:rw
   - --filesystem=~/.var/app/com.valvesoftware.Steam/data/Steam/appcache/librarycache:rw
+  - --filesystem=~/.var/app/com.valvesoftware.Steam/data/registry.vdf:ro
+  - --filesystem=~/.var/app/com.valvesoftware.Steam:rw
 modules:
   - name: sgdboop
     no-autogen: true
     sources:
       - type: archive
-        url: https://api.github.com/repos/SteamGridDB/SGDBoop/tarball/v1.1.0
-        sha256: e80bc69de68ad0f7e15c02b35fb3f7a5b3d4f0ce689e49945c92753a6162abe2
+        url: https://api.github.com/repos/SteamGridDB/SGDBoop/tarball/v1.2.0
+        sha256: cb8ab9baba7c4237599a2f6cd28c4d5dab9b6dd4418ccc0c7f7253a27bef1fc0
         archive-type: tar-gzip
         x-checker-data:
           type: json
