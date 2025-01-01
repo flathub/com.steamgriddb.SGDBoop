@@ -6,6 +6,7 @@ command: SGDBoop
 finish-args:
   - --socket=wayland
   - --socket=fallback-x11
+  - --share=ipc
   - --share=network
   - --filesystem=~/.local/state:create
   # Used for reading SteamID of user
