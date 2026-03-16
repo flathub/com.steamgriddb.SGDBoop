@@ -33,8 +33,8 @@ modules:
     no-autogen: true
     sources:
       - type: archive
-        url: https://api.github.com/repos/SteamGridDB/SGDBoop/tarball/v1.3.1
-        sha256: fde3379de013c40ec7d1ab35f4a3d0177d6155358bc635bcdb44e35b156291e6
+        url: https://api.github.com/repos/SteamGridDB/SGDBoop/tarball/26f36b4
+        sha256: c92b476e84f20c7a9c81ab7f2c9556f1e849b0e93f1487e0c7204c22c9317123
         archive-type: tar-gzip
         x-checker-data:
           type: json
