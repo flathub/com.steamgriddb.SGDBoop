@@ -34,7 +34,7 @@ modules:
     sources:
       - type: archive
         url: https://api.github.com/repos/SteamGridDB/SGDBoop/tarball/ceb8565
-        sha256: D04CDEF66F29031652DF162B35C8A7E82C9FE605579391CC85F930B1CBFC8AD3
+        sha256: d04cdef66f29031652df162b35c8a7e82c9fe605579391cc85f930b1cbfc8ad3
         archive-type: tar-gzip
         x-checker-data:
           type: json
