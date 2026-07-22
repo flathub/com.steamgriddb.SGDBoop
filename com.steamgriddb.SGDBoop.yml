@@ -30,9 +30,6 @@ finish-args:
   - --filesystem=/var/lib/flatpak/app/com.valvesoftware.Steam:ro
 modules:
   - name: sgdboop
-    build-options:
-        env:
-          APP_ID: com.steamgriddb.SGDBoop
     no-autogen: true
     sources:
       - type: archive
