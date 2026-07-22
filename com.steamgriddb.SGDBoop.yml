@@ -1,6 +1,6 @@
 app-id: com.steamgriddb.SGDBoop
 runtime: org.freedesktop.Platform
-runtime-version: '24.08'
+runtime-version: '25.08'
 sdk: org.freedesktop.Sdk
 command: SGDBoop
 finish-args:
@@ -33,8 +33,8 @@ modules:
     no-autogen: true
     sources:
       - type: archive
-        url: https://api.github.com/repos/SteamGridDB/SGDBoop/tarball/26f36b4
-        sha256: c92b476e84f20c7a9c81ab7f2c9556f1e849b0e93f1487e0c7204c22c9317123
+        url: https://api.github.com/repos/SteamGridDB/SGDBoop/tarball/710370939b2a3ee24d56d4c06a25e56e6c52d17c
+        sha256: a7bdb9abe1ad528c25a2e6d6298f245785f26d19f9f4d75924bc3501cd98b9e6
         archive-type: tar-gzip
         x-checker-data:
           type: json
